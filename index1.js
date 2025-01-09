@@ -22,6 +22,6 @@ function drawDesign3(numInput) {
 
 const input = prompt("Enter Number: ");
 numInput = parseInt(input, 10);
-//drawDesign1(numInput);
-//drawDesign2(numInput);
+drawDesign1(numInput);
+drawDesign2(numInput);
 drawDesign3(numInput);
