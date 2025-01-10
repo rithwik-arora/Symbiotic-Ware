@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eligibilty Form</title>
+    <div>
+      <h1 style="font-family: 'Courier New', Courier, monospace">FORM</h1>
+    </div>
+  </head>
+  <body>
+    <div>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name_input" />
+        <br />
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age_input" />
+        <br />
+        <label for="gender"
+          >Gender:
+          <br />
+
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="Male"
+              id="male"
+              required
+            />Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="Female"
+              id="female"
+            />Female
+          </label>
+        </label>
+        <br />
+      </form>
+      <button onclick="printResults()" id="submit_btn">Submit</button>
+    </div>
+
+    <div id="results">
+      <h1 style="font-family: 'Courier New', Courier, monospace">
+        Form Results
+      </h1>
+
+      <p id="name">Name:</p>
+      <p id="age">Age:</p>
+      <p id="gender">Gender:</p>
+      <p id="adult">Is Adult:</p>
+      <p id="vote">Eligible to Vote:</p>
+    </div>
+  </body>
+  <script src="form.js"></script>
+
+  <style>
+    input {
+      margin-bottom: 20px; /* Adds space between the labels */
+    }
+    button {
+      margin-top: 30x; /* Adds space between the labels */
+    }
+  </style>
+</html>

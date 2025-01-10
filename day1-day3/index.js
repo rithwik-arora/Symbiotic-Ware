@@ -100,7 +100,7 @@ console.log("Array:", list);
 //} else if (UserInput == "d" || UserInput == "desc") {
 isAsc = false;
 //} else {
-console.log("Wrong input.");
+
 //}
 
 if (isAsc != null) {
@@ -127,12 +127,20 @@ function Sort(event) {
   var nums = text.value;
   let check = document.getElementById("toggleSwitch");
   var bool = !check.checked;
-  console.log(bool);
 
   nums = nums.replace(/ /g, "");
   let result = nums.toString().split(",").map(Number);
-  document.getElementById("ans").textContent =
-    "Sorted List : " + selectionSort(result, bool);
+  var x = document.getElementById("myDIV");
+  // inner text
+  // inner html
+  const sampleDiv = `
+    <p>
+      ${selectionSort(result, bool)}
+    </p>
+  `;
+  x.innerHTML = sampleDiv;
+  // x.querySelector(".ans").innerHTML = result;
+  // "Sorted List : " + selectionSort(result, bool);
 }
 
 sortingBtn.addEventListener("click", Sort);
