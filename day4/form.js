@@ -25,3 +25,5 @@ function printResults() {
   formResults.querySelector("#adult").innerHTML = "Is Adult: " + ADULT;
   formResults.querySelector("#vote").innerHTML = "Eligible to Vote: " + VOTE;
 }
+
+sbmit_btn.addEventListener("click", printResults);
