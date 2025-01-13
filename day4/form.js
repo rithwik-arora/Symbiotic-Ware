@@ -18,6 +18,11 @@ function printResults() {
     ADULT = "No";
     VOTE = "No";
   }
+  formResults.querySelector("#name").innerHTML = "Name: " + NAME;
+  formResults.querySelector("#age").innerHTML = "Age: " + AGE;
+  formResults.querySelector("#gender").innerHTML = "Gender: " + GENDER;
+  formResults.querySelector("#adult").innerHTML = "Is Adult: " + ADULT;
+  formResults.querySelector("#vote").innerHTML = "Eligible to Vote: " + VOTE;
 }
 
 sbmit_btn.addEventListener("click", printResults);
