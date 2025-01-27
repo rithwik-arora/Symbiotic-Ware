@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eligibilty Form</title>
+    <link rel="stylesheet" href="formStyle.css" />
     <div>
       <h1 style="font-family: 'Courier New', Courier, monospace">FORM</h1>
     </div>
@@ -12,11 +13,21 @@
     <div>
       <form>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name_input" />
+        <input
+          type="text"
+          name="name"
+          id="name_input"
+          placeholder="Enter your full name"
+        />
         <br />
 
         <label for="age">Age:</label>
-        <input type="number" name="age" id="age_input" />
+        <input
+          type="number"
+          name="age"
+          id="age_input"
+          placeholder="Enter your age"
+        />
         <br />
         <label for="gender"
           >Gender:
@@ -58,13 +69,4 @@
     </div>
   </body>
   <script src="form.js"></script>
-
-  <style>
-    input {
-      margin-bottom: 20px; /* Adds space between the labels */
-    }
-    button {
-      margin-top: 30x; /* Adds space between the labels */
-    }
-  </style>
 </html>

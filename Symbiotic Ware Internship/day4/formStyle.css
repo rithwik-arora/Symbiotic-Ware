@@ -1,0 +1,12 @@
+body {
+  background-color: hsl(0, 0%, 90%);
+}
+
+input {
+  margin-bottom: 20px; /* Adds space between the labels */
+}
+button {
+  margin-top: 30x; /* Adds space between the labels */
+}
+
+
